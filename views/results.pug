@@ -1,0 +1,22 @@
+extends layout
+
+block content
+	h1= title
+	div #{message}
+	div.results
+		if results
+			each country in results
+				div.card-country #{country.name}
+					a(href='#{country.search}' target='_blank') Search
+					if country.cities
+						each city in country.cities
+							div.card-city #{city.name}
+								a(href='#{city.search}' target='_blank') Search
+								if city.flights
+									div.card-city-flights
+										div.card-flight-best
+											div.card-flight-price #{city.flights.best.price}
+											div.card-flight-duration #{city.flights.best.duration}
+										div.card-flight-cheapest
+											div.card-flight-price #{city.flights.cheapest.price}
+											div.card-flight-duration #{city.flights.cheapest.duration}

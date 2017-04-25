@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  background: #eeeeee;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  width: 100%;
+
+  align-content: stretch;
+  align-items: center;
+  justify-content: center;
+
+  background: #54638E;
+  color: #FBEEAD;
+}
+
+.body-wrapper {
+  width: 90%;
+  margin: auto;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0 5px 10px 0 #AD7442;
+  background: white;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.tagline {
+  font-size: 2em;
+}
+
+.body-description {
+  display: flex;
+}
+
+.trip-controls {
+  display: flex;
+  justify-content: center;
+
+  padding: 5px 0;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-country {
+  display: flex;
+}

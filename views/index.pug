@@ -1,0 +1,26 @@
+extends layout
+
+block content
+	div(class='body-description').
+		Welcome to Wanna Travel. We aren't pretty, but we'll show you some stuff. We want to show you where you can travel
+		for as cheap as possible. Just tell us what day of the week you prefer and how long you'd like your trip to last.
+		We'll do the rest (we won't pay for it, of course).
+	div.trip-controls
+		form(action='/parse/submit', method='post' )
+			select(name='days')
+				option(value="5") 5
+				option(value="6") 6
+				option(value="7") 7
+				option(value="8") 8
+				option(value="9") 9
+				option(value="10") 10
+			label days
+			select(name='dayOfWeek')
+				option(value="0") Sunday
+				option(value="1") Monday
+				option(value="2") Tuesday
+				option(value="3") Wednesday
+				option(value="4") Thursday
+				option(value="5") Friday
+				option(value="6") Saturday
+			input(type="submit" value="Check!")
