@@ -13,7 +13,9 @@ import { Flight } from '../../models/flight'
 
 let router = express.Router();
 
-/* GET selections from form. */
+/**
+ *  country/get --Checks travel-settings for list of countries to add to database.
+ */
 router.get('/get', function(req, res, next) {
 	req.socket.setTimeout(5 * 60 * 1000)
 	req.socket.addListener('timeout', function() {

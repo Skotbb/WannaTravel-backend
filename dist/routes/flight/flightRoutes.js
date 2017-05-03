@@ -20,6 +20,11 @@ var parsingManager = require('../../public/javascripts/parsingManager');
 
 var router = express.Router();
 
+/**
+ * flight/getForAllCities/int-#ofDays/0-6-dayOfWeek
+ *  --Checks db for cities and gets flights for all cities.
+ *  Uses travel-settings for amount of time to search each flight.
+ */
 router.get('/getForAllCities/:days/:dayOfWeek', function (req, res, next) {
 	var _this = this;
 

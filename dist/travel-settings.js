@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var databaseName = exports.databaseName = "wannatravel-dev";
+var databaseName = exports.databaseName = "wanna-travel-dev";
 
 // export const countriesILike = [
 // 	"Ireland", "United Kingdom", "Australia", "Spain", "Canada", "Italy", "New Zealand", "Germany", "Netherlands",

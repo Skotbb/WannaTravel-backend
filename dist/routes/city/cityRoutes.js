@@ -22,6 +22,9 @@ var databaseName = require('../../travel-settings');
 
 var router = express.Router();
 
+/**
+ * city/getForAllCountries --Checks database for existing countries and gathers cities for those countries.
+ */
 router.get('/getForAllCountries', function (req, res, next) {
 	var _this = this;
 

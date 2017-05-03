@@ -13,6 +13,9 @@ import {Flight} from '../../models/flight'
 
 let router = express.Router();
 
+/**
+ * city/getForAllCountries --Checks database for existing countries and gathers cities for those countries.
+ */
 router.get('/getForAllCountries', function (req, res, next) {
 	req.socket.setTimeout(10 * 60 * 1000)
 	req.socket.addListener('timeout', function () {

@@ -1,4 +1,4 @@
-export const databaseName = "wannatravel-dev"
+export const databaseName = "wanna-travel-dev"
 
  // export const countriesILike = [
 // 	"Ireland", "United Kingdom", "Australia", "Spain", "Canada", "Italy", "New Zealand", "Germany", "Netherlands",

@@ -13,6 +13,11 @@ import {Flight} from '../../models/flight'
 
 let router = express.Router();
 
+/**
+ * flight/getForAllCities/int-#ofDays/0-6-dayOfWeek
+ *  --Checks db for cities and gets flights for all cities.
+ *  Uses travel-settings for amount of time to search each flight.
+ */
 router.get('/getForAllCities/:days/:dayOfWeek', function (req, res, next) {
 	req.socket.setTimeout(10 * 60 * 1000)
 	req.socket.addListener('timeout', function () {
